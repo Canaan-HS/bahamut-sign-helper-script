@@ -1,6 +1,6 @@
 /**
  * Generate a random hexadecimal string
- *
+ * ⚠️ WARNING: This function does not solve CSRF token issues.
  * @param length The length of the hexadecimal string
  */
 function generateRandomHex(length = 16): string {
