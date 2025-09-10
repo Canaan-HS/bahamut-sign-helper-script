@@ -35,7 +35,7 @@ function findAnswer(html: string) {
 }
 
 export async function fromblackxblue() {
-  const creations = await HomeApi.Creation.list("blackXblue");
+  const creations = await HomeApi.Creation.list("blackXblue", { row: "1" });
   const todayCreation = creations.find(creation => isToday(creation.title));
 
   if (!todayCreation) throw new Error("No creation found.");
