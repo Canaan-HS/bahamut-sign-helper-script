@@ -8,7 +8,7 @@
     "rootDir": "..",
     "baseUrl": ".",
     "paths": {
-      "@common/*": ["../common/*"],
+      "@common/*": ["../common/*"]
     },
     "types": [],
 
@@ -23,7 +23,7 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
+    "noFallthroughCasesInSwitch": true
   },
-  "include": ["./**/*.ts", "./**/*.tsx", "./**/*.vue", "../common/**/*.ts"],
+  "include": ["./**/*.ts", "./**/*.tsx", "./**/*.vue", "../common/**/*.ts"]
 }

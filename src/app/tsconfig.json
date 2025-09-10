@@ -9,7 +9,7 @@
     "baseUrl": ".",
     "paths": {
       "@pages/*": ["../../dist/pages/*"],
-      "@common/*": ["../common/*"],
+      "@common/*": ["../common/*"]
     },
     "types": ["tampermonkey"],
 
@@ -25,7 +25,7 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
+    "noFallthroughCasesInSwitch": true
   },
-  "include": ["./**/*.ts", "./**/*.tsx", "./**/*.vue", "../common/**/*.ts"],
+  "include": ["./**/*.ts", "./**/*.tsx", "./**/*.vue", "../common/**/*.ts"]
 }

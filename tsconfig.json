@@ -3,12 +3,12 @@
     "skipLibCheck": true,
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": [
     "vite.config.ts",
     "rollup.config.ts",
     "scripts/**/*.ts",
-    "commitlint.config.cjs",
-  ],
+    "commitlint.config.cjs"
+  ]
 }
