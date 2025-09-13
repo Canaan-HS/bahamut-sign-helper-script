@@ -15,7 +15,7 @@ function isToday(title: string) {
 }
 
 function findAnswer(html: string) {
-  const element = document.createRange().createContextualFragment(html);
+  const element = new DOMParser().parseFromString(html, "text/html");
 
   const targets = ["#article_content", "#home_content", ".MSG-list8C"].join(
     ",",
