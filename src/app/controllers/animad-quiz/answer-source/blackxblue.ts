@@ -15,14 +15,11 @@ function isToday(title: string) {
 }
 
 function findAnswer(html: string) {
-  const element = document.createElement("html");
+  const element = new DOMParser().parseFromString(html, "text/html");
 
-  element.innerHTML = html;
-  const targets = [
-    "#home_content",
-    ".MSG-list8C, #article_content",
-    "#article_content",
-  ].join(",");
+  const targets = ["#article_content", "#home_content", ".MSG-list8C"].join(
+    ",",
+  );
   const postContent = element.querySelector(targets)?.textContent;
 
   if (!postContent) throw new Error("No post content found.");

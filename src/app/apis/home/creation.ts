@@ -92,8 +92,7 @@ export async function list(user: string, options: ListOptions = {}) {
 }
 
 export async function getHTML(sn: string) {
-  const uri =
-    "https://api.gamer.com.tw/mobile_app/bahamut/v1/home_creation_detail_webview.php";
+  const uri = "https://home.gamer.com.tw/artwork.php";
   const params = new URLSearchParams({ sn });
   const response = await HttpService.get<string>(`${uri}?${params.toString()}`);
 
